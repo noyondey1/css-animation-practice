@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.social-icons ul{
+    text-align: center;
+}
+
+.social-icons ul li{
+    display: inline-block;
+    margin: 0 10px;
+    background-color: lightblue;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.social-icons ul li a{
+    line-height: 40px;
+    font-size: 1.25rem;
+    color: white;
+}
+
+li:nth-child(1){
+    animation: ball-1 1s ease-in-out 0.1s infinite alternate;
+}
+
+@keyframes ball-1 {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-100px);
+        background-color: #3b599b;
+    }
+}
+li:nth-child(2){
+    animation: ball-2 1s ease-in-out 0.5s infinite alternate;
+}
+
+@keyframes ball-2 {
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-100px);
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);;
+    }
+}
+li:nth-child(3){
+    animation: ball-3 1s ease-in-out 1s infinite alternate;
+}
+
+@keyframes ball-3 {
+    0%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(-100px);
+        background-color: #0e76a8;
+    }
+}
+li:nth-child(4){
+    animation: ball-4 1s ease-in-out 0.8s infinite alternate;
+}
+
+@keyframes ball-4 {
+    0%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(-100px);
+        background-color: black;
+    }
+}
